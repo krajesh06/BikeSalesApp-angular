@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>PhoneNumber</th>
+            <th>Queries/th>
+            <th>Feedback</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let review of reviews;let i= index">
+            <td>{{i+1}}</td>
+            <td>{{review.name}}</td>
+            <td>{{review.phonenumber}}</td>
+            <td>{{review.queries}}</td>
+            <td>{{review.feedback}}</td>
+            </tr>
+    </tbody>
+</table>

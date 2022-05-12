@@ -1,0 +1,33 @@
+
+
+
+<!-- {{Bikes | json}} -->
+
+<table class="table table-bordered">
+
+    <thead>
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>PhoneNumber</th>
+            <th>Aadharnumber</th>
+            <th>Bikename</th>
+            <th>Color</th>
+            <th>Model</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let order of orders;let i= index">
+            <td>{{i+1}}</td>
+            <td>{{order.name}}</td>
+            <td>{{order.phonenumber}}</td>
+            <td>{{order.aadharnumber}}</td>
+            <td>{{order.bikename}}</td>
+            <td>{{order.color}}</td>
+            <td>{{order.model}}</td>
+            
+            </tr>
+    </tbody>
+</table>
+

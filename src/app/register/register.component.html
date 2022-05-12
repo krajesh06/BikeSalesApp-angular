@@ -1,0 +1,35 @@
+<html >
+<body >    
+<h1>REGISTER</h1>
+      <form ngNativeValidate (submit)="register()"  (ngSubmit)="register()">
+        <div>
+            <label for="name" style="color: black">Name:</label>
+            <input type="text" name="name"  id="name"  [(ngModel)]="name"
+            placeholder="Enter Your Name" style="background-color: lightblue"required autofocus>
+        </div>
+        
+        <div>
+            <label for="emailId">Email Id:</label>
+            <input type="text" name="emailId" [(ngModel)]="mail_id" id="email Id"
+            placeholder="Enter Your Email Id" style="background-color: lightblue" required>
+        </div>
+        
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password"id="password"  [(ngModel)]="password"
+            placeholder="Enter Your Password" style="background-color: lightblue" required >
+        </div>
+        
+        <div>
+            <label for="mobilenumber ">Mobile Number:</label>
+            <input type="text" name="mobilenumber"  id="mobilenumber" [(ngModel)]="mobilenumber"
+            placeholder="Enter Your Mobile Number" style="background-color: lightblue"  required>
+        </div>        
+        <div>   <button type="submit">submit</button> </div>
+        
+</form>
+<p style="margin-left:500px">
+    Already Registered! <button routerLink="login">Login</button>
+</p>
+</body>
+</html>

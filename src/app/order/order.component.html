@@ -1,0 +1,45 @@
+<h1>ORDER</h1>
+      <form ngNativeValidate (submit)="order()"  (ngSubmit)="order()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name"  id="name"  [(ngModel)]="name"
+            placeholder="Enter Your Name" required autofocus>
+        </div>
+        <br>
+        <div>
+            <label for="phonenumber">Phone Number:</label>
+            <input type="text" name="phone" [(ngModel)]="phonenumber" id="phone"
+            placeholder="Enter Your phonenumber" required>
+        </div>
+        <br>
+        <div>
+            <label for="aadharnumber">Aadhar Number:</label>
+            <input type="text" name="aadhar" [(ngModel)]="aadharnumber" id="aadhar"
+            placeholder="Enter Your aadharnumber" required>
+        </div>
+        <br>
+        <div>
+            <label for="bikename">Bike Name:</label>
+            <input type="text" name="bikename" [(ngModel)]="bikename" id="bikename"
+            placeholder="Enter the bikename" required>
+        </div>
+        <br>
+        <div>
+            <label for="color">Color:</label>
+            <input type="text" name="color" [(ngModel)]="color" id="color"
+            placeholder="Enter the Color" required>
+        </div>
+        <br>
+        <div>
+            <label for="model">Bike Moddel:</label>
+            <input type="text" name="model" [(ngModel)]="model" id="model"
+            placeholder="Enter the bikemodel" required>
+        </div>
+        <br>
+       
+            <button type="submit">submit</button>
+        </form>
+        
+
+
+
