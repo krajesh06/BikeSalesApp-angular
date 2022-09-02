@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ListordersComponent } from './listorders/listorders.component';
 import { ListreviewComponent } from './listreview/listreview.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ListreviewComponent } from './listreview/listreview.component';
     ListuserComponent,
     ListordersComponent,
     ListreviewComponent,
+    HomeComponent
     
   ],
   imports: [

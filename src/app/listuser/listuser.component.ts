@@ -28,13 +28,14 @@ getAllUser()
 deleteuser(name:any){;
   let cfm = confirm("Do you want to Delete this user ?");
   if(cfm){
-  const url="http://localhost:9000/Admin/listUser/" + name;
+  const url="http://localhost:9000/Admin/listUser/"+name;
   this.http.delete(url).subscribe((res)=>{
     console.log(res);
     this.toastrService.success("user deleted successfully");
     this.getAllUser();
   },(err)=>{
-    this.toastrService.error("Sorry can cannot deleted");
+    console.log(err.error);
+    this.toastrService.error(err.error.message);
   })
 }
 

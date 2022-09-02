@@ -8,11 +8,19 @@ div{
     padding: 10px;
     margin-left: 500px;
 }
- body{
-    background-image: url("re.jpg"); 
-    background-attachment: fixed;
+ body
+{
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    opacity: 0.5;
+    background-attachment: cover;
     background-size:fill;
 }   
+.reg{
+    width: 1980px;
+    height: 1150px;
+}
 
 #submit{
     background-color: green;

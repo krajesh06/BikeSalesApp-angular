@@ -1,0 +1,23 @@
+
+ h1{padding: 10px;
+     text-align: center;
+ }
+ h6{
+     text-align: center;
+ }
+ div{
+     padding: 10px;
+     text-align: center;
+ }
+ body{
+     background-color: lightblue;
+     
+    
+   border-bottom-left-radius: 10;
+   border-color: brown;
+    padding: 100px;
+ }
+ #h6{
+     font-style: italic;
+ }
+   

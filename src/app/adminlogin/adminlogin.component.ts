@@ -16,8 +16,8 @@ export class AdminloginComponent implements OnInit {
   }
   adminlogin(){
     const adminobj={
-      "name":"rajesh",
-      "password":"rajesh123"
+      "name":this.name,
+      "password":this.password
   };
   const url="http://localhost:9000/Admin/login";
      this.http.post(url,adminobj).subscribe((res)=>{

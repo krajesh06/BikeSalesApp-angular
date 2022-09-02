@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { HomeComponent } from './home/home.component';
 import { ListbikeComponent } from './listbike/listbike.component';
 import { ListordersComponent } from './listorders/listorders.component';
 import { ListreviewComponent } from './listreview/listreview.component';
@@ -19,7 +20,9 @@ const routes: Routes = [
   {path:'listorders',component:ListordersComponent},
   {path:'listreview',component:ListreviewComponent},
   {path:'order',component:OrderComponent},
-  {path:'review',component:ReviewsComponent}
+  {path:'review',component:ReviewsComponent},
+  {path:'home',component:HomeComponent},
+  {path:'',redirectTo:'home',pathMatch:'full'}
 ];
 
 @NgModule({
